@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tag SEO & Social Media -->
+    <meta name="description" content="Toko Kertas Beringin Jaya Tangerang - Menjual berbagai jenis kertas, rekam master, ongkos potong, dan katalog blanko undangan lengkap.">
+    <meta name="keywords" content="toko kertas tangerang, kertas hvs, art paper, blanko undangan, rekam master, beringin jaya">
+    <meta property="og:title" content="Toko Kertas Beringin Jaya">
+    <meta property="og:description" content="Pusat penjualan kertas, jasa potong, dan rekam master presisi di Tangerang.">
+    <meta property="og:image" content="assets/Gemini_Generated_Image_df7pndf7pndf7pnd.png">
+    <meta property="og:url" content="https://tokokertasberinginjaya.com">
+    <title>Toko Kertas Beringin Jaya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-white font-sans text-slate-900">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-white shadow-none">
+        <header class="py-4 px-6 max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-[#004d40] rounded-full flex items-center justify-center overflow-hidden">
+                    <img src="assets/Gemini_Generated_Image_df7pndf7pndf7pnd.png" alt="Logo Beringin Jaya" class="w-full h-full object-cover" draggable="false">
+                </div>
+                <div>
+                    <p class="text-[10px] tracking-[0.3em] text-[#004d40] font-bold font-serif leading-tight">TOKO KERTAS</p>
+                    <h1 class="text-2xl font-serif font-bold text-[#b91c1c] leading-tight italic">BERINGIN JAYA</h1>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex gap-8 text-sm font-bold text-slate-600 uppercase tracking-wider">
+                <a href="#home" class="hover:text-[#b91c1c] transition">Beranda</a>
+                <a href="#layanan" class="hover:text-[#b91c1c] transition">Layanan</a>
+                <a href="#produk" class="hover:text-[#b91c1c] transition">Produk</a>
+                <a href="#kontak" class="hover:text-[#b91c1c] transition">Kontak</a>
+            </div>
+
+            <!-- Badge & Hamburger -->
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:block text-white bg-[#b91c1c] px-5 py-2 rounded-md text-xs font-extrabold uppercase tracking-wider shadow-lg pulse-effect">
+                    Best Service Product
+                </div>
+                <button id="menuBtn" class="md:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-md transition">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/90 backdrop-blur-lg border-t overflow-hidden transition-all duration-300">
+            <div class="flex flex-col items-center justify-center p-6 gap-4 text-sm font-semibold text-slate-600 uppercase tracking-wider">
+                <a href="#home" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Beranda</a>
+                <a href="#layanan" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Layanan</a>
+                <a href="#produk" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Produk</a>
+                <a href="#kontak" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section: Beranda (Hero) -->
+    <section id="home" class="relative bg-gradient-to-br from-[#fdfcf0] to-green-50 py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left" data-aos="fade-up">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold text-[#004d40] mb-6 leading-tight">
+                    TOKO KERTAS <br><span class="text-[#b91c1c] font-serif font-bold italic">BERINGIN JAYA</span>
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed font-medium">
+                    Menjual Macam-macam Kertas, Rekam Master, Ongkos Potong, dan Tersedia Macam-macam Blanko Undangan
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#produk" class="bg-[#b91c1c] text-white px-10 py-4 rounded-lg font-bold shadow-xl hover:bg-red-800 transition transform hover:-translate-y-1">Cek Daftar Produk</a>
+                    <a href="#layanan" class="bg-white text-[#004d40] border-2 border-[#004d40] px-10 py-4 rounded-lg font-bold hover:bg-green-50 transition">Layanan Kami</a>
+                </div>
+            </div>
+            <div class="flex-1 grid grid-cols-2 gap-4 relative">
+                <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white floating-image" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/Untitled2.png" alt="Produk 1" class="w-full h-full object-cover" draggable="false">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white mt-8 floating-image-reverse" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="assets/Untitled21.png" alt="Produk 2" class="w-full h-full object-cover" draggable="false">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-[#004d40] mb-12 text-center underline decoration-[#b91c1c] underline-offset-8" data-aos="fade-up">Layanan Kami</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-slate-100 bg-slate-50/30 rounded-3xl hover:shadow-2xl transition duration-500 flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-[#004d40] bg-white p-4 rounded-2xl shadow-sm group-hover:scale-110 group-hover:bg-[#004d40] group-hover:text-white transition duration-500">
+                        <i data-lucide="settings" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mt-6 mb-2">Rekam Master</h4>
+                    <p class="text-slate-500 leading-relaxed">Pembuatan plat/master cetak presisi.</p>
+                </div>
+                <div class="p-8 border border-slate-100 bg-slate-50/30 rounded-3xl hover:shadow-2xl transition duration-500 flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-[#004d40] bg-white p-4 rounded-2xl shadow-sm group-hover:scale-110 group-hover:bg-[#004d40] group-hover:text-white transition duration-500">
+                        <i data-lucide="scissors" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mt-6 mb-2">Ongkos Potong</h4>
+                    <p class="text-slate-500 leading-relaxed">Jasa potong kertas custom sesuai ukuran.</p>
+                </div>
+                <div class="p-8 border border-slate-100 bg-slate-50/30 rounded-3xl hover:shadow-2xl transition duration-500 flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-[#004d40] bg-white p-4 rounded-2xl shadow-sm group-hover:scale-110 group-hover:bg-[#004d40] group-hover:text-white transition duration-500">
+                        <i data-lucide="book-open" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mt-6 mb-2">Katalog Blanko</h4>
+                    <p class="text-slate-500 leading-relaxed">Koleksi desain undangan terlengkap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog Produk Section -->
+    <section id="produk" class="py-32 bg-slate-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col items-center text-center mb-16" data-aos="fade-up">
+                <h3 class="text-3xl lg:text-4xl font-serif font-bold text-[#004d40]">Katalog Pilihan</h3>
+                <div class="w-20 h-1.5 bg-[#b91c1c] my-4 mx-auto"></div>
+                <p class="text-slate-500 max-w-md mx-auto">Temukan berbagai varian kertas dengan berbagai ukuran plano maupun ukuran standar kantor.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
+                <!-- Data produk dirender via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Detail Container -->
+    <div id="productModal" class="fixed inset-0 z-[60] bg-slate-900/80 backdrop-blur-md hidden-modal items-center justify-center p-4 sm:p-6">
+        <!-- Konten di-generate secara dinamis oleh script.js -->
+    </div>
+
+    <!-- Section: Kontak -->
+    <footer id="kontak" class="bg-[#004d40] text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 border-b border-white/10 pb-16 mb-12">
+            <div class="lg:col-span-1">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-[#004d40] rounded-full flex items-center justify-center overflow-hidden">
+                        <img src="assets/Gemini_Generated_Image_df7pndf7pndf7pnd.png" alt="Logo" class="w-full h-full object-cover" draggable="false">
+                    </div>
+                    <h4 class="text-xl font-serif font-bold italic">Toko Kertas Beringin Jaya</h4>
+                </div>
+                <p class="text-slate-400 leading-relaxed mb-8">Menjual Macam-macam Kertas, Rekam Master, Ongkos Potong, dan Tersedia Macam-macam Blanko Undangan</p>
+            </div>
+            <div class="lg:col-span-1">
+                <h5 class="text-lg font-bold mb-8 border-l-4 border-[#b91c1c] pl-4">Hubungi Kami</h5>
+            <div class="space-y-6 text-slate-400 text-sm">
+                <div class="flex gap-4"><i data-lucide="map-pin" class="text-[#b91c1c] shrink-0"></i> <span>Jl. Beringin Raya Blok 35 No. 21 Perum 1, Tangerang</span></div>
+                
+                <!-- Telepon Rumah / Kantor (Landline) -->
+                <div class="flex gap-4">
+                    <i data-lucide="phone" class="text-[#b91c1c] shrink-0"></i>
+                    <a href="tel:02155793774" class="hover:text-white transition-colors">(021) 5579-3774</a>
+                </div>
+
+                <!-- Telepon / WhatsApp HP -->
+                <div class="flex gap-4">
+                    <i data-lucide="smartphone" class="text-[#b91c1c] shrink-0"></i>
+                    <a href="tel:0895615714909" class="hover:text-white transition-colors">0895-6157-14909</a>
+                </div>
+
+                <!-- Email -->
+                <div class="flex gap-4">
+                    <i data-lucide="mail" class="text-[#b91c1c] shrink-0"></i>
+                    <a href="mailto:info@tokokertasberinginjaya.com" class="hover:text-white transition-colors break-all">info@tokokertasberinginjaya.com</a>
+                </div>
+
+                <div class="flex gap-4"><i data-lucide="clock" class="text-[#b91c1c] shrink-0"></i> <span>Senin - Sabtu <br> 08.00 - 17.00 WIB</span></div>
+            </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h4 class="text-lg font-bold mb-8 underline decoration-[#b91c1c] underline-offset-8">Alamat Maps</h4>
+                <div class="w-full h-40 rounded-2xl overflow-hidden border border-white/10">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.452445112108!2d106.61259427453075!3d-6.203893360773661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69feb98883b4d3%3A0x56855fff38369ce7!2sToko%20Kertas%20Beringin%20Jaya!5e0!3m2!1sid!2sid!4v1715000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-xs text-slate-500 font-medium italic">© 2026 Toko Kertas Beringin Jaya. All rights reserved</div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/62895615714909" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-2xl shadow-lg hover:scale-110 transition flex items-center gap-3 group" draggable="false">
+        <i data-lucide="phone" class="w-6 h-6"></i>
+        <div class="hidden sm:block">
+            <p class="text-[10px] uppercase font-bold opacity-80 leading-none">Ada Pertanyaan?</p>
+            <p class="text-sm font-black">Chat WhatsApp</p>
+        </div>
+    </a>
+
+    <button id="scrollTopBtn" class="fixed bottom-32 right-8 z-50 bg-[#d9be0d] text-white p-4 rounded-full shadow-2xl hidden opacity-0 transition-all duration-300 border-2 border-white/20">
+        <i data-lucide="chevron-up" class="w-6 h-6"></i>
+    </button>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

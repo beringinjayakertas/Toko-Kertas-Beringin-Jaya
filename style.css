@@ -1,0 +1,56 @@
+/* Modal active state untuk freeze scroll halaman */
+.modal-active { 
+    overflow: hidden; 
+}
+
+#productModal { 
+    transition: opacity 0.3s ease; 
+}
+
+.hidden-modal { 
+    display: none; 
+    opacity: 0; 
+}
+
+.show-modal { 
+    display: flex; 
+    opacity: 1; 
+}
+
+/* Animasi naik turun normal */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Animasi naik turun tapi mulai dari atas dulu */
+@keyframes float-oppose {
+  0% { transform: translateY(-20px); }
+  50% { transform: translateY(0px); }
+  100% { transform: translateY(-20px); }
+}
+
+.floating-image {
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-image-reverse {
+  animation: float-oppose 4s ease-in-out infinite;
+}
+
+/* Animasi detak jantung */
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.pulse-effect {
+  animation: heartBeat 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+.pulse-effect:hover {
+  animation-play-state: paused;
+}
