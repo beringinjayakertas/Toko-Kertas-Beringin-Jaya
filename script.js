@@ -131,6 +131,8 @@ const products = [
             { n: "Kertas Mika", s: "Transparan / Warna" },
             { n: "Box Kartu Nama", s: "Berbagai Ukuran" },
             { n: "Plastik Swalayan", s: "Berbagai Ukuran" },
+            { n: "Plastik Undangan", s: "Berbagai Ukuran" },
+            { n: "Tali Rafia", s: "Berbagai Ukuran" },
             { n: "Kertas Foto", s: "Berbagai Ukuran" },
             { n: "Kertas Laminating", s: "Matte (Doff) / Glossy" }
         ] 
