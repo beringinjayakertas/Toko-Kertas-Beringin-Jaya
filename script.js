@@ -89,7 +89,7 @@ const products = [
     },
     { 
         id: 8, 
-        name: "Kartu Tik, BC & Dorslag", 
+        name: "Kartu Tik, BC, Dorslag", 
         desc: "Kertas tebal sedang dan kertas tipis bertekstur untuk cetak kartu stok, cover jilid, formulir, atau kertas penyekat.", 
         img: "assets/pexels-valentin-ivantsov-2154772556-36753659.jpg", 
         items: [
@@ -100,9 +100,9 @@ const products = [
     },
     { 
         id: 9, 
-        name: "Tinta / Etching", 
+        name: "Tinta & Etching", 
         desc: "Tinta cetak dan cairan etching pilihan untuk menunjang hasil cetakan yang maksimal dan tahan lama pada mesin percetakan.", 
-        img: "assets/pexels-mart-production-7577920.jpg", 
+        img: "assets/pexels-jakubzerdzicki-17536002.jpg", 
         items: [
             { n: "Tinta Best One", s: "Berbagai Warna" }, 
             { n: "Tinta New Echo", s: "Berbagai Warna" }, 
