@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Lokasi Sitemap Kamu
+Sitemap: https://tokokertasberinginjaya.com/sitemap.xml
