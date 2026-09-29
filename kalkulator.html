@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kebijakan Privasi Toko Kertas Beringin Jaya - Informasi pengelolaan data dan operasional situs resmi.">
     <link rel="icon" type="image/png" sizes="32x32" href="https://tokokertasberinginjaya.com/assets/Gemini_Generated_Image_df7pndf7pndf7pnd.png?v=2">
-    <title translate="no">Kebijakan Privasi - Toko Kertas Beringin Jaya</title>
+    <meta name="description" content="Kalkulator Potong Kertas Plano - Hitung estimasi hasil potong lembaran kertas plano ke ukuran A4, F4, A3, atau custom ukuran di Toko Kertas Beringin Jaya Tangerang.">
+    <title translate="no">Kalkulator Potong Kertas - Toko Kertas Beringin Jaya</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -34,7 +34,7 @@
                 <a href="index.html" class="hover:text-[#b91c1c] transition">Beranda</a>
                 <a href="layanan.html" class="hover:text-[#b91c1c] transition">Layanan</a>
                 <a href="produk.html" class="hover:text-[#b91c1c] transition">Produk</a>
-                <a href="kalkulator.html" class="hover:text-[#b91c1c] transition">Kalkulator</a>
+                <a href="kalkulator.html" class="text-[#b91c1c]">Kalkulator</a>
                 <a href="kontak.html" class="hover:text-[#b91c1c] transition">Kontak</a>
             </div>
 
@@ -55,55 +55,145 @@
                 <a href="index.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Beranda</a>
                 <a href="layanan.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Layanan</a>
                 <a href="produk.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Produk</a>
-                <a href="kalkulator.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Kalkulator</a>
+                <a href="kalkulator.html" class="mobile-link text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Kalkulator</a>
                 <a href="kontak.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <!-- Konten Kebijakan Privasi -->
-    <main class="max-w-4xl mx-auto px-6 py-12 flex-1 w-full">
-        <div class="bg-white p-8 md:p-12 rounded-[2rem] border border-slate-200/80 shadow-sm" data-aos="fade-up">
-            
-            <div class="mb-8 border-b border-slate-100 pb-6">
-                <h2 class="text-3xl font-serif font-bold text-[#004d40]">Kebijakan Privasi</h2>
-                <div class="w-16 h-1 bg-[#b91c1c] mt-3"></div>
-            </div>
-
-            <p class="text-slate-600 leading-relaxed mb-8 font-medium">
-                Halaman Kebijakan Privasi ini menjelaskan bagaimana informasi dan data pengunjung dikelola di situs web resmi Toko Kertas Beringin Jaya.
+    <!-- Header Section -->
+    <section class="bg-gradient-to-br from-[#fdfcf0] to-green-50 py-16 px-6 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#004d40] mb-4">Kalkulator Potong Kertas Plano</h2>
+            <p class="text-slate-600 font-medium max-w-2xl mx-auto">
+                Hitung estimasi berapa lembar potong yang didapatkan dari 1 lembar kertas plano standar sesuai dengan spesifikasi mesin kami.
             </p>
+        </div>
+    </section>
 
-            <div class="space-y-8">
-                <div class="p-6 bg-slate-50 rounded-2xl border border-amber-100">
-                    <h3 class="text-lg font-bold text-[#004d40] mb-2 flex items-center gap-2">
-                        <i data-lucide="shield-check" class="text-[#b91c1c] w-5 h-5"></i> 1. Pengelola & Kepemilikan Situs
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        Situs web resmi <span class="font-bold text-[#004d40]">tokokertasberinginjaya.com</span> dimiliki, dikembangkan, dan dikelola secara resmi oleh <strong class="text-[#0f172a]">Bapak Ir. Hendrik Riady</strong> selaku pemilik/pengelola operasional Toko Kertas Beringin Jaya yang berlokasi di Tangerang, Banten.
-                    </p>
+    <!-- Main Content Kalkulator -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-1 w-full" data-aos="fade-up">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Form Input Ukuran -->
+            <div class="lg:col-span-6 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-6">
+                <h3 class="text-xl font-bold text-[#004d40] flex items-center gap-2 border-b pb-4">
+                    <i data-lucide="calculator" class="w-5 h-5 text-[#b91c1c]"></i> Input Ukuran & Spesifikasi Mesin
+                </h3>
+
+                <!-- Spesifikasi Mesin -->
+                <!-- SEKARANG (Tersembunyi tapi Nilai Tetap 92 cm): -->
+                <input type="hidden" id="machineWidth" value="92">
+
+                <!-- Step 1: Ukuran Plano -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-bold text-slate-800">1. Pilih Ukuran Kertas Plano Utuh:</label>
+                    <select id="planoPreset" onchange="applyPlanoPreset()" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold focus:ring-2 focus:ring-[#004d40] focus:outline-none">
+                        <option value="79x109">Plano Standard A (79 x 109 cm) - Art Paper, Ivory, Board</option>
+                        <option value="65x100">Plano Standard B (65 x 100 cm) - HVS, BC, Samson</option>
+                        <option value="61x86">Plano Standard C (61 x 86 cm) - NCR, HVS Medium</option>
+                        <option value="65x90">Plano Standard D (65 x 90 cm) - Bookpaper, Koran</option>
+                        <option value="custom">-- Ukuran Custom Plano --</option>
+                    </select>
+
+                    <div class="grid grid-cols-2 gap-4 pt-1">
+                        <div>
+                            <span class="text-xs font-bold text-slate-500 mb-1 block">Panjang Plano (cm)</span>
+                            <input type="number" id="planoP" value="79" step="0.1" class="w-full p-3 bg-slate-100 cursor-not-allowed text-slate-500 border border-slate-200 rounded-xl text-sm font-bold focus:ring-2 focus:ring-[#004d40] focus:outline-none" readonly>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-500 mb-1 block">Lebar Plano (cm)</span>
+                            <input type="number" id="planoL" value="109" step="0.1" class="w-full p-3 bg-slate-100 cursor-not-allowed text-slate-500 border border-slate-200 rounded-xl text-sm font-bold focus:ring-2 focus:ring-[#004d40] focus:outline-none" readonly>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <h3 class="text-lg font-bold text-[#004d40] mb-2 flex items-center gap-2">
-                        <i data-lucide="file-text" class="text-[#b91c1c] w-5 h-5"></i> 2. Penggunaan Data Pesanan
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        Setiap komunikasi atau transaksi yang dilakukan melalui kontak WhatsApp maupun layanan di situs ini hanya digunakan secara internal untuk memproses pemesanan, pengiriman, serta pemotongan kertas sesuai spesifikasi permintaan pelanggan.
-                    </p>
+                <!-- Step 2: Ukuran Potong Target -->
+                <div class="space-y-3 pt-2">
+                    <label class="block text-sm font-bold text-slate-800">2. Pilih / Masukkan Ukuran Hasil Potong:</label>
+                    <select id="cutPreset" onchange="applyCutPreset()" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold focus:ring-2 focus:ring-[#004d40] focus:outline-none">
+                        <option value="21x29.7">Ukuran A4 (21 x 29.7 cm)</option>
+                        <option value="21.5x33">Ukuran Folio / F4 (21.5 x 33 cm)</option>
+                        <option value="29.7x42">Ukuran A3 (29.7 x 42 cm)</option>
+                        <option value="32x48">Ukuran A3+ / Super A3 (32 x 48 cm)</option>
+                        <option value="14.8x21">Ukuran A5 (14.8 x 21 cm)</option>
+                        <option value="10.5x14.8">Ukuran A6 (10.5 x 14.8 cm)</option>
+                        <option value="custom">-- Ukuran Custom Potong --</option>
+                    </select>
+
+                    <div class="grid grid-cols-2 gap-4 pt-1">
+                        <div>
+                            <span class="text-xs font-bold text-slate-500 mb-1 block">Panjang Potong (cm)</span>
+                            <input type="number" id="cutP" value="21" step="0.1" class="w-full p-3 bg-slate-100 cursor-not-allowed text-slate-500 border border-slate-200 rounded-xl text-sm font-bold focus:ring-2 focus:ring-[#004d40] focus:outline-none" readonly>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-500 mb-1 block">Lebar Potong (cm)</span>
+                            <input type="number" id="cutL" value="29.7" step="0.1" class="w-full p-3 bg-slate-100 cursor-not-allowed text-slate-500 border border-slate-200 rounded-xl text-sm font-bold focus:ring-2 focus:ring-[#004d40] focus:outline-none" readonly>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Step 3: Jumlah Lembar Plano -->
+                <div class="pt-2">
+                    <label class="block text-sm font-bold text-slate-800 mb-1">3. Jumlah Kertas Plano (Lembar):</label>
+                    <input type="number" id="planoQty" value="1" min="1" class="w-full p-3 bg-white border border-slate-200 rounded-xl text-sm font-bold focus:ring-2 focus:ring-[#004d40] focus:outline-none">
+                </div>
+
+                <!-- Tombol Hitung -->
+                <button onclick="calculatePaperCut()" class="w-full py-4 bg-[#004d40] hover:bg-[#b91c1c] text-white rounded-xl font-bold transition duration-300 shadow-md flex items-center justify-center gap-2 text-base">
+                    <i data-lucide="scissors" class="w-5 h-5"></i> Hitung Hasil Potong
+                </button>
             </div>
 
-            <div class="mt-10 pt-6 border-t border-slate-100 flex justify-start">
-                <a href="index.html" class="inline-flex items-center gap-2 bg-[#004d40] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#b91c1c] transition duration-300 shadow-md">
-                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Halaman Utama
-                </a>
+            <!-- Card Hasil Perhitungan & Visualisasi Canvas -->
+            <div class="lg:col-span-6 space-y-6">
+                <div class="bg-gradient-to-br from-[#004d40] to-[#00332a] text-white p-8 rounded-3xl shadow-xl space-y-6 relative overflow-hidden">
+                    
+                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                        <h4 class="text-lg font-serif font-bold text-emerald-200">Hasil Estimasi Potong</h4>
+                        <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-sans border border-emerald-400/30">Sesuai Standar Mesin Kami</span>
+                    </div>
+
+                    <div class="text-center py-2 space-y-1">
+                        <p class="text-xs font-bold uppercase tracking-widest text-slate-300">Total Lembar Hasil Potong:</p>
+                        <div class="text-6xl font-black text-amber-300" id="resTotalSheets">0</div>
+                        <p class="text-xs text-emerald-200/80 font-medium" id="resDetailText">Dari 1 lembar plano</p>
+                    </div>
+
+                    <div class="bg-white/10 p-4 rounded-2xl border border-white/10 space-y-2 text-xs">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Hasil per 1 Plano:</span>
+                            <span class="font-bold text-white text-sm" id="resPerSheet">0 Lembar</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-2 border-t border-white/10">
+                            <span class="text-slate-300">Estimasi Efisiensi Kertas:</span>
+                            <span class="font-bold text-amber-300" id="resEfficiency">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Diagram Canvas Visualisasi Potong -->
+                    <div class="bg-white p-4 rounded-2xl text-slate-900 space-y-2">
+                        <div class="flex justify-between items-center text-xs font-bold text-slate-700">
+                            <span>Diagram Layout Potong:</span>
+                            <span class="text-[10px] text-slate-400 font-normal">*Tegak (Hijau) / Miring (Kuning)</span>
+                        </div>
+                        <div class="w-full flex justify-center bg-slate-100 rounded-xl p-2 border">
+                            <canvas id="paperCanvas" width="400" height="300" class="w-full h-auto max-h-72 object-contain"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/62895615714909?text=Halo%20Toko%20Kertas%20Beringin%20Jaya,%20saya%20mau%20tanya%20stok%20kertas%20dan%20jasa%20ongkos%20potong..." target="_blank" class="w-full py-3 bg-[#25D366] hover:bg-emerald-600 text-white rounded-xl font-bold transition flex items-center justify-center gap-2 text-xs shadow-lg">
+                            <i data-lucide="phone" class="w-4 h-4"></i> Konsultasi & Pesan Jasa Potong WA
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
     </main>
 
-    <!-- Section: Footer -->
+    <!-- Footer Section -->
     <!-- Section: Footer -->
     <footer id="kontak" class="bg-[#004d40] text-white pt-24 pb-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 border-b border-white/10 pb-16 mb-12">

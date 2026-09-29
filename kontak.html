@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kebijakan Privasi Toko Kertas Beringin Jaya - Informasi pengelolaan data dan operasional situs resmi.">
     <link rel="icon" type="image/png" sizes="32x32" href="https://tokokertasberinginjaya.com/assets/Gemini_Generated_Image_df7pndf7pndf7pnd.png?v=2">
-    <title translate="no">Kebijakan Privasi - Toko Kertas Beringin Jaya</title>
+    <meta name="description" content="Hubungi Toko Kertas Beringin Jaya Tangerang - Alamat lokasi Karawaci, jam buka, nomor telepon kantor & WhatsApp resmi.">
+    <title translate="no">Hubungi Kami - Toko Kertas Beringin Jaya</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -35,7 +35,7 @@
                 <a href="layanan.html" class="hover:text-[#b91c1c] transition">Layanan</a>
                 <a href="produk.html" class="hover:text-[#b91c1c] transition">Produk</a>
                 <a href="kalkulator.html" class="hover:text-[#b91c1c] transition">Kalkulator</a>
-                <a href="kontak.html" class="hover:text-[#b91c1c] transition">Kontak</a>
+                <a href="kontak.html" class="text-[#b91c1c]">Kontak</a>
             </div>
 
             <!-- Badge & Hamburger -->
@@ -56,54 +56,98 @@
                 <a href="layanan.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Layanan</a>
                 <a href="produk.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Produk</a>
                 <a href="kalkulator.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Kalkulator</a>
-                <a href="kontak.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center">Kontak</a>
+                <a href="kontak.html" class="mobile-link text-[#b91c1c] py-2 transition w-full text-center">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <!-- Konten Kebijakan Privasi -->
-    <main class="max-w-4xl mx-auto px-6 py-12 flex-1 w-full">
-        <div class="bg-white p-8 md:p-12 rounded-[2rem] border border-slate-200/80 shadow-sm" data-aos="fade-up">
-            
-            <div class="mb-8 border-b border-slate-100 pb-6">
-                <h2 class="text-3xl font-serif font-bold text-[#004d40]">Kebijakan Privasi</h2>
-                <div class="w-16 h-1 bg-[#b91c1c] mt-3"></div>
-            </div>
-
-            <p class="text-slate-600 leading-relaxed mb-8 font-medium">
-                Halaman Kebijakan Privasi ini menjelaskan bagaimana informasi dan data pengunjung dikelola di situs web resmi Toko Kertas Beringin Jaya.
+    <!-- Header Section -->
+    <section class="bg-gradient-to-br from-[#fdfcf0] to-green-50 py-16 px-6 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#004d40] mb-4">Informasi Kontak & Lokasi</h2>
+            <p class="text-slate-600 font-medium max-w-2xl mx-auto">
+                Silakan hubungi kami via telepon, WhatsApp, atau kunjungi toko fisik kami langsung di Karawaci, Tangerang.
             </p>
+        </div>
+    </section>
 
-            <div class="space-y-8">
-                <div class="p-6 bg-slate-50 rounded-2xl border border-amber-100">
-                    <h3 class="text-lg font-bold text-[#004d40] mb-2 flex items-center gap-2">
-                        <i data-lucide="shield-check" class="text-[#b91c1c] w-5 h-5"></i> 1. Pengelola & Kepemilikan Situs
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        Situs web resmi <span class="font-bold text-[#004d40]">tokokertasberinginjaya.com</span> dimiliki, dikembangkan, dan dikelola secara resmi oleh <strong class="text-[#0f172a]">Bapak Ir. Hendrik Riady</strong> selaku pemilik/pengelola operasional Toko Kertas Beringin Jaya yang berlokasi di Tangerang, Banten.
-                    </p>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-1 w-full space-y-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start" data-aos="fade-up">
+            
+            <!-- Detail Informasi Kontak -->
+        <!-- Kartu Informasi Kontak dengan Status Live & Tombol Copy -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-6">
+            <div class="flex items-center justify-between border-b pb-4">
+                <h3 class="text-2xl font-serif font-bold text-[#004d40]">Kontak Resmi</h3>
+                <!-- Indicator Status Buka / Tutup Otomatis -->
+                <div id="storeStatus"></div>
+            </div>
+            
+            <!-- Alamat Toko + Tombol Salin & Google Maps -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-red-50 text-[#b91c1c] rounded-xl shrink-0">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
                 </div>
-
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                    <h3 class="text-lg font-bold text-[#004d40] mb-2 flex items-center gap-2">
-                        <i data-lucide="file-text" class="text-[#b91c1c] w-5 h-5"></i> 2. Penggunaan Data Pesanan
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        Setiap komunikasi atau transaksi yang dilakukan melalui kontak WhatsApp maupun layanan di situs ini hanya digunakan secara internal untuk memproses pemesanan, pengiriman, serta pemotongan kertas sesuai spesifikasi permintaan pelanggan.
+                <div class="flex-1">
+                    <strong class="block text-slate-900 font-bold mb-1">Alamat Toko:</strong>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        Jl. Beringin Raya Blok 35 No.21, RT.002/RW.001, Nusa Jaya, Kec. Karawaci, Kota Tangerang, Banten 15116
                     </p>
+
+                    <!-- Tombol Interaktif -->
+                    <div class="flex flex-wrap items-center gap-2">
+                        <button id="copyAddressBtn" onclick="copyAddress()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition inline-flex items-center gap-1.5">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i> Salin Alamat
+                        </button>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Toko+Kertas+Beringin+Jaya+Karawaci+Tangerang" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-[#004d40] hover:bg-[#b91c1c] text-white rounded-lg text-xs font-bold transition inline-flex items-center gap-1.5">
+                            <i data-lucide="navigation" class="w-3.5 h-3.5"></i> Buka di Google Maps
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="mt-10 pt-6 border-t border-slate-100 flex justify-start">
-                <a href="index.html" class="inline-flex items-center gap-2 bg-[#004d40] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#b91c1c] transition duration-300 shadow-md">
-                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Halaman Utama
-                </a>
+            <!-- Telepon Kantor -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-green-50 text-[#004d40] rounded-xl shrink-0"><i data-lucide="phone" class="w-6 h-6"></i></div>
+                <div>
+                    <strong class="block text-slate-900 font-bold">Telepon Kantor (Office):</strong>
+                    <a href="tel:02155793774" class="text-slate-600 text-sm hover:text-[#b91c1c] transition">(021) 5579-3774</a>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl shrink-0"><i data-lucide="smartphone" class="w-6 h-6"></i></div>
+                <div>
+                    <strong class="block text-slate-900 font-bold">WhatsApp / Telepon:</strong>
+                    <a href="https://wa.me/62895615714909" target="_blank" class="text-slate-600 text-sm hover:text-[#b91c1c] transition font-semibold text-emerald-600">0895-6157-14909</a>
+                </div>
+            </div>
+
+            <!-- Jam Operasional -->
+            <div class="flex items-start gap-4">
+                <div class="p-3 bg-amber-50 text-amber-600 rounded-xl shrink-0"><i data-lucide="clock" class="w-6 h-6"></i></div>
+                <div>
+                    <strong class="block text-slate-900 font-bold">Jam Operasional:</strong>
+                    <p class="text-slate-600 text-sm">Senin – Sabtu: 08.00 – 17.00 WIB<br><span class="text-red-500 font-semibold">(Minggu / Hari Libur Nasional Tutup)</span></p>
+                </div>
+            </div>
+        </div>
+
+            <!-- Embed Google Maps -->
+            <div class="bg-white p-4 rounded-3xl border border-slate-200/80 shadow-sm h-full flex flex-col">
+                <h3 class="text-xl font-bold text-[#004d40] mb-4 px-4 pt-2">Petunjuk Peta Google Maps</h3>
+                <div class="w-full h-80 md:h-full min-h-[360px] rounded-2xl overflow-hidden border">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.452445112108!2d106.61259427453075!3d-6.203893360773661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69feb98883b4d3%3A0x56855fff38369ce7!2sToko%20Kertas%20Beringin%20Jaya!5e0!3m2!1sid!2sid!4v1715000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
 
         </div>
+
     </main>
 
-    <!-- Section: Footer -->
     <!-- Section: Footer -->
     <footer id="kontak" class="bg-[#004d40] text-white pt-24 pb-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 border-b border-white/10 pb-16 mb-12">
@@ -179,12 +223,9 @@
                 <div class="w-full h-40 rounded-2xl overflow-hidden border border-white/10 mb-4">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.452445112108!2d106.61259427453075!3d-6.203893360773661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69feb98883b4d3%3A0x56855fff38369ce7!2sToko%20Kertas%20Beringin%20Jaya!5e0!3m2!1sid!2sid!4v1715000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <a href="kontak.html" class="text-xs font-bold text-[#d9be0d] hover:underline flex items-center gap-1">
-                    Buka Halaman Kontak & Maps Lengkap <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                </a>
             </div>
         </div>
-<div class="text-center text-xs text-slate-500 font-medium italic flex flex-wrap justify-center items-center gap-2">
+        <div class="text-center text-xs text-slate-500 font-medium italic flex flex-wrap justify-center items-center gap-2">
     <!-- Copyright (Tetap Utuh) -->
     <span translate="no" class="notranslate leading-none">© 2026 Toko Kertas Beringin Jaya. All rights reserved.</span>
     
@@ -195,7 +236,7 @@
     <a href="privacy-policy.html" class="not-italic underline hover:text-slate-300 inline-block leading-none">
         Kebijakan Privasi
     </a>
-</div>
+</div>  
     </footer>
 
     <!-- Floating Buttons -->

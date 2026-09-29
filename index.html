@@ -62,7 +62,8 @@
     }
     }
     </script>
-    <title translate="no">Toko Kertas Beringin Jaya - Menyediakan Berbagai Jenis Kertas, Jasa Ongkos Potong & Perlengkapan Percetakan Lainnya</title>    <!-- Tailwind CSS -->
+    <title translate="no">Toko Kertas Beringin Jaya - Menyediakan Berbagai Jenis Kertas, Jasa Ongkos Potong & Perlengkapan Percetakan Lainnya</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -71,12 +72,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="min-h-screen bg-white font-sans text-slate-900">
+<body class="min-h-screen bg-white font-sans text-slate-900 flex flex-col justify-between">
 
     <!-- Navigation -->
     <nav id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-white shadow-none">
         <header class="py-4 px-6 max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
+            <a href="index.html" class="flex items-center gap-3">
                 <div class="w-12 h-12 bg-[#004d40] rounded-full flex items-center justify-center overflow-hidden">
                     <img src="assets/Gemini_Generated_Image_df7pndf7pndf7pnd.png" alt="Logo Beringin Jaya" class="w-full h-full object-cover" draggable="false">
                 </div>
@@ -84,14 +85,15 @@
                     <p class="text-[10px] tracking-[0.3em] text-[#004d40] font-bold font-serif leading-tight" translate="no">TOKO KERTAS</p>
                     <h1 class="text-2xl font-serif font-bold text-[#b91c1c] leading-tight italic" translate="no">BERINGIN JAYA</h1>
                 </div>
-            </div>
+            </a>
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex gap-8 text-sm font-bold text-slate-600 uppercase tracking-wider">
-                <a href="#home" class="hover:text-[#b91c1c] transition">Beranda</a>
-                <a href="#layanan" class="hover:text-[#b91c1c] transition">Layanan</a>
-                <a href="#produk" class="hover:text-[#b91c1c] transition">Produk</a>
-                <a href="#kontak" class="hover:text-[#b91c1c] transition">Kontak</a>
+                <a href="index.html" class="text-[#b91c1c]">Beranda</a>
+                <a href="layanan.html" class="hover:text-[#b91c1c] transition">Layanan</a>
+                <a href="produk.html" class="hover:text-[#b91c1c] transition">Produk</a>
+                <a href="kalkulator.html" class="hover:text-[#b91c1c] transition">Kalkulator</a>
+                <a href="kontak.html" class="hover:text-[#b91c1c] transition">Kontak</a>
             </div>
 
             <!-- Badge & Hamburger -->
@@ -106,12 +108,13 @@
         </header>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white/90 backdrop-blur-lg border-t overflow-hidden transition-all duration-300">
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t overflow-hidden transition-all duration-300">
             <div class="flex flex-col items-center justify-center p-6 gap-4 text-sm font-semibold text-slate-600 uppercase tracking-wider">
-                <a href="#home" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Beranda</a>
-                <a href="#layanan" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Layanan</a>
-                <a href="#produk" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Produk</a>
-                <a href="#kontak" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center">Kontak</a>
+                <a href="index.html" class="mobile-link text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Beranda</a>
+                <a href="layanan.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Layanan</a>
+                <a href="produk.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Produk</a>
+                <a href="kalkulator.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center border-b border-slate-100">Kalkulator</a>
+                <a href="kontak.html" class="mobile-link hover:text-[#b91c1c] py-2 transition w-full text-center">Kontak</a>
             </div>
         </div>
     </nav>
@@ -127,8 +130,8 @@
                     Menyediakan Berbagai Jenis Kertas, Jasa Ongkos Potong & Perlengkapan Percetakan Lainnya
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#produk" class="bg-[#b91c1c] text-white px-10 py-4 rounded-lg font-bold shadow-xl hover:bg-red-800 transition transform hover:-translate-y-1">Cek Daftar Produk</a>
-                    <a href="#layanan" class="bg-white text-[#004d40] border-2 border-[#004d40] px-10 py-4 rounded-lg font-bold hover:bg-green-50 transition">Layanan Kami</a>
+                    <a href="produk.html" class="bg-[#b91c1c] text-white px-10 py-4 rounded-lg font-bold shadow-xl hover:bg-red-800 transition transform hover:-translate-y-1">Cek Daftar Produk</a>
+                    <a href="layanan.html" class="bg-white text-[#004d40] border-2 border-[#004d40] px-10 py-4 rounded-lg font-bold hover:bg-green-50 transition">Layanan Kami</a>
                 </div>
             </div>
 
@@ -140,11 +143,11 @@
         </div>
     </section>
 
-    <!-- Layanan -->
-    <section id="layanan" class="py-20 bg-white px-6">
+    <!-- Layanan Ringkas -->
+    <section class="py-20 bg-white px-6">
         <div class="max-w-7xl mx-auto">
             <h3 class="text-3xl font-serif font-bold text-[#004d40] mb-12 text-center underline decoration-[#b91c1c] underline-offset-8" data-aos="fade-up">Layanan Kami</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
                 <div class="p-8 border border-slate-100 bg-slate-50/30 rounded-3xl hover:shadow-2xl transition duration-500 flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-[#004d40] bg-white p-4 rounded-2xl shadow-sm group-hover:scale-110 group-hover:bg-[#004d40] group-hover:text-white transition duration-500">
                         <i data-lucide="files" class="w-8 h-8"></i>
@@ -167,43 +170,173 @@
                     <p class="text-slate-500 leading-relaxed">Koleksi dan perlengkapan percetakan lainnya</p>
                 </div>
             </div>
+            <div class="text-center" data-aos="fade-up">
+                <a href="layanan.html" class="inline-flex items-center gap-2 bg-[#004d40] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#b91c1c] transition duration-300 shadow-md">
+                    Lihat Detail Layanan <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Katalog Produk Section -->
-    <section id="produk" class="py-32 bg-slate-50 px-6">
+    <!-- Highlight Produk Utama -->
+    <section class="py-24 bg-slate-50 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col items-center text-center mb-10" data-aos="fade-up">
-                <h3 class="text-3xl lg:text-4xl font-serif font-bold text-[#004d40]">Katalog Produk</h3>
+                <h3 class="text-3xl lg:text-4xl font-serif font-bold text-[#004d40]">Produk & Perlengkapan</h3>
                 <div class="w-20 h-1.5 bg-[#b91c1c] my-4 mx-auto"></div>
-                <p class="text-slate-500 max-w-md mx-auto">Temukan berbagai varian kertas dengan berbagai ukuran plano maupun ukuran standar kantor</p>
-            </div>
-
-            <!-- Input Pencarian Filter Cepat -->
-            <div class="max-w-md mx-auto mb-12 relative" data-aos="fade-up">
-                <div class="relative flex items-center">
-                    <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-4 pointer-events-none"></i>
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="Cari produk, deskripsi, jenis, atau item..." 
-                        class="w-full pl-12 pr-4 py-3.5 bg-white border border-slate-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-[#004d40] focus:border-transparent text-sm transition"
-                    >
-                </div>
+                <p class="text-slate-500 max-w-md mx-auto">Temukan berbagai varian kertas dengan berbagai ukuran plano maupun ukuran standar kantor di katalog produk kami</p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
-                <!-- Data produk dirender via script.js -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12" id="productGrid">
+                <!-- Dirender 6 produk terpopuler via script.js -->
+            </div>
+
+            <div class="text-center" data-aos="fade-up">
+                <a href="produk.html" class="inline-flex items-center gap-2 bg-[#b91c1c] text-white px-10 py-4 rounded-xl font-bold hover:bg-red-800 transition duration-300 shadow-xl">
+                    Lihat Semua Katalog & Pencarian Produk <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Modal Detail Container -->
-    <div id="productModal" class="fixed inset-0 z-[60] bg-slate-900/80 backdrop-blur-md hidden-modal items-center justify-center p-4 sm:p-6">
-        <!-- Konten di-generate secara dinamis oleh script.js -->
-    </div>
+    <div id="productModal" class="fixed inset-0 z-[60] bg-slate-900/80 backdrop-blur-md hidden-modal items-center justify-center p-4 sm:p-6"></div>
 
-    <!-- Section: Kontak -->
+<!-- Section: Testimoni Asli Google Maps -->
+<section class="py-20 bg-white px-6 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Header Section & Overall Rating -->
+        <div class="flex flex-col items-center text-center mb-12" data-aos="fade-up">
+            <span class="px-4 py-1.5 bg-amber-50 text-amber-700 rounded-full text-xs font-extrabold uppercase tracking-widest mb-3 border border-amber-200/60 inline-flex items-center gap-1.5">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i> Ulasan Asli Google Maps
+            </span>
+            <h3 class="text-3xl lg:text-4xl font-serif font-bold text-[#004d40]">Apa Kata Pelanggan Kami?</h3>
+            <div class="w-20 h-1.5 bg-[#b91c1c] my-4 mx-auto"></div>
+            
+            <!-- Ringkasan Rating -->
+            <div class="flex items-center gap-3 mt-2 bg-slate-50 px-6 py-3 rounded-2xl border border-slate-200/80">
+                <span class="text-3xl font-black text-slate-900 leading-none">4.7</span>
+                <div class="flex flex-col items-start">
+                    <div class="flex text-amber-400 gap-0.5">
+                        <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        <i data-lucide="star-half" class="w-4 h-4 fill-amber-400"></i>
+                    </div>
+                    <span class="text-xs font-semibold text-slate-500 mt-1">Ulasan Bintang 4.7 di Google Maps</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid 3 Ulasan Teratas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            
+            <!-- Ulasan 1: ngemilsantaiid. -->
+            <div class="p-8 bg-slate-50/70 border border-slate-200/80 rounded-3xl shadow-sm hover:shadow-xl transition duration-500 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-400 flex items-center gap-1">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Terverifikasi
+                        </span>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium italic">
+                        "tempatnya sederhana, tapi jenis kertasnya banyak dan kualitas bagus. Sudah langganan disini. Harganya cukup bersaing juga."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+                    <div class="w-10 h-10 rounded-full bg-[#004d40] text-white font-bold flex items-center justify-center text-sm shadow-md">
+                        NS
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">ngemil santaiid.</h4>
+                        <p class="text-xs text-slate-500">Google Local Guide</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ulasan 2: Nathan A. -->
+            <div class="p-8 bg-slate-50/70 border border-slate-200/80 rounded-3xl shadow-sm hover:shadow-xl transition duration-500 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-400 flex items-center gap-1">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Terverifikasi
+                        </span>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium italic">
+                        "Potongan kertas disini akurasi nya sangat tinggi dan presisi. Saya akan order lebih banyak!"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+                    <div class="w-10 h-10 rounded-full bg-[#b91c1c] text-white font-bold flex items-center justify-center text-sm shadow-md">
+                        NA
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Nathan A.</h4>
+                        <p class="text-xs text-slate-500">Pelanggan Google Maps</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ulasan 3: TJGR S. -->
+            <div class="p-8 bg-slate-50/70 border border-slate-200/80 rounded-3xl shadow-sm hover:shadow-xl transition duration-500 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-400 flex items-center gap-1">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Terverifikasi
+                        </span>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium italic">
+                        "Sangat membantu untuk cari bahan kertas khusus dan perlengkapan jilid/cetak. Lokasi mudah dijangkau di Jalan Beringin Raya."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-200/60">
+                    <div class="w-10 h-10 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm shadow-md">
+                        TS
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">TJGR S.</h4>
+                        <p class="text-xs text-slate-500">Pelanggan Google Maps</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tombol Buka Google Maps Langsung -->
+        <div class="text-center" data-aos="fade-up">
+            <a href="https://www.google.com/maps/search/?api=1&query=Toko+Kertas+Beringin+Jaya+Karawaci+Tangerang" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#004d40] hover:bg-[#b91c1c] text-white px-8 py-3.5 rounded-xl font-bold transition duration-300 shadow-md text-sm">
+                <i data-lucide="map-pin" class="w-4 h-4"></i> Baca Semua Ulasan Lengkap di Google Maps
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Section: Footer -->
+    <!-- Section: Footer -->
     <footer id="kontak" class="bg-[#004d40] text-white pt-24 pb-12 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 border-b border-white/10 pb-16 mb-12">
             <div class="lg:col-span-1">
@@ -219,7 +352,6 @@
             <div>
                 <h5 class="text-lg font-bold text-white mb-3 tracking-wider">Ikuti Kami</h5>
                 <div class="flex items-center gap-3">
-                <!-- Instagram (Gradient Instagram khas) -->
                 <a href="https://www.instagram.com/beringinjayakertas/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-md" title="Instagram">
                     <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
@@ -227,30 +359,22 @@
                         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                     </svg>
                 </a>
-
-                <!-- Facebook (#1877F2) -->
                 <a href="https://www.facebook.com/profile.php?id=61592995533227" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-[#1877F2] flex items-center justify-center text-white hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-md" title="Facebook">
                     <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                     </svg>
                 </a>
-
-                <!-- YouTube (#FF0000) -->
                 <a href="https://www.youtube.com/@BeringinJayaKertas" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-[#FF0000] flex items-center justify-center text-white hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-md" title="YouTube">
                     <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
                         <polygon points="10 15 15 12 10 9 10 15"/>
                     </svg>
                 </a>
-
-                <!-- TikTok (#000000) -->
                 <a href="https://www.tiktok.com/@beringinjayakertas?lang=en" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-black flex items-center justify-center text-white hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-md" title="TikTok">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.32V9.28a8.16 8.16 0 0 0 4.77 1.52V7.34a4.85 4.85 0 0 1-.86-.65z"/>
                     </svg>
                 </a>
-
-                <!-- LinkedIn (#0A66C2) -->
                 <a href="https://www.linkedin.com/company/toko-kertas-beringin-jaya" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-[#0A66C2] flex items-center justify-center text-white hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-md" title="LinkedIn">
                     <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -258,48 +382,53 @@
                         <circle cx="4" cy="4" r="2"/>
                     </svg>
                 </a>
-                    
                 </div>
             </div>
             </div>
 
             <div class="lg:col-span-1">
                 <h5 class="text-lg font-bold mb-8 border-l-4 border-[#b91c1c] pl-4">Hubungi Kami</h5>
-            <div class="space-y-6 text-slate-400 text-sm">
-                <div class="flex gap-4"><i data-lucide="map-pin" class="text-[#b91c1c] shrink-0"></i> <span>Jl. Beringin Raya Blok 35 No.21, RT.002/RW.001, Nusa Jaya, Kec. Karawaci, Kota Tangerang, Banten 15116</span></div>
-                
-                <!-- Telepon Rumah / Kantor (Landline) -->
-                <div class="flex gap-4">
-                    <i data-lucide="phone" class="text-[#b91c1c] shrink-0"></i>
-                    <a href="tel:02155793774" class="hover:text-white transition-colors">(021) 5579-3774</a>
+                <div class="space-y-6 text-slate-400 text-sm">
+                    <div class="flex gap-4"><i data-lucide="map-pin" class="text-[#b91c1c] shrink-0"></i> <span>Jl. Beringin Raya Blok 35 No.21, RT.002/RW.001, Nusa Jaya, Kec. Karawaci, Kota Tangerang, Banten 15116</span></div>
+                    <div class="flex gap-4">
+                        <i data-lucide="phone" class="text-[#b91c1c] shrink-0"></i>
+                        <a href="tel:02155793774" class="hover:text-white transition-colors">(021) 5579-3774</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <i data-lucide="smartphone" class="text-[#b91c1c] shrink-0"></i>
+                        <a href="tel:0895615714909" class="hover:text-white transition-colors">0895-6157-14909</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <i data-lucide="mail" class="text-[#b91c1c] shrink-0"></i>
+                        <a href="mailto:beringinjayakertas@gmail.com" class="hover:text-white transition-colors break-all">beringinjayakertas@gmail.com</a>
+                    </div>
+                    <div class="flex gap-4"><i data-lucide="clock" class="text-[#b91c1c] shrink-0"></i> <span>Senin - Sabtu <br> 08.00 - 17.00 WIB</span></div>
                 </div>
-
-                <!-- Telepon / WhatsApp HP -->
-                <div class="flex gap-4">
-                    <i data-lucide="smartphone" class="text-[#b91c1c] shrink-0"></i>
-                    <a href="tel:0895615714909" class="hover:text-white transition-colors">0895-6157-14909</a>
-                </div>
-
-                <!-- Email -->
-                <div class="flex gap-4">
-                    <i data-lucide="mail" class="text-[#b91c1c] shrink-0"></i>
-                    <a href="mailto:beringinjayakertas@gmail.com" class="hover:text-white transition-colors break-all">beringinjayakertas@gmail.com</a>
-                </div>
-
-                <div class="flex gap-4"><i data-lucide="clock" class="text-[#b91c1c] shrink-0"></i> <span>Senin - Sabtu <br> 08.00 - 17.00 WIB</span></div>
             </div>
-            </div>
+
             <div class="flex flex-col items-center">
                 <h4 class="text-lg font-bold mb-8 underline decoration-[#b91c1c] underline-offset-8">Alamat Maps</h4>
-                <div class="w-full h-40 rounded-2xl overflow-hidden border border-white/10">
+                <div class="w-full h-40 rounded-2xl overflow-hidden border border-white/10 mb-4">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.452445112108!2d106.61259427453075!3d-6.203893360773661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69feb98883b4d3%3A0x56855fff38369ce7!2sToko%20Kertas%20Beringin%20Jaya!5e0!3m2!1sid!2sid!4v1715000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+                <a href="kontak.html" class="text-xs font-bold text-[#d9be0d] hover:underline flex items-center gap-1">
+                    Buka Halaman Kontak & Maps Lengkap <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
             </div>
         </div>
-            <div class="text-center text-xs text-slate-500 font-medium italic" translate="no">
-            © 2026 Toko Kertas Beringin Jaya. All rights reserved. | <a href="privacy-policy.html" class="not-italic underline hover:text-slate-300">Kebijakan Privasi</a>
-            </div>    
-        </footer>
+<div class="text-center text-xs text-slate-500 font-medium italic flex flex-wrap justify-center items-center gap-2">
+    <!-- Copyright (Tetap Utuh) -->
+    <span translate="no" class="notranslate leading-none">© 2026 Toko Kertas Beringin Jaya. All rights reserved.</span>
+    
+    <!-- Pemisah -->
+    <span class="opacity-50 leading-none">|</span>
+    
+    <!-- Tautan Kebijakan Privasi (Bisa Diterjemahkan) -->
+    <a href="privacy-policy.html" class="not-italic underline hover:text-slate-300 inline-block leading-none">
+        Kebijakan Privasi
+    </a>
+</div>
+    </footer>
 
     <!-- Floating Buttons -->
     <a href="https://wa.me/62895615714909" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-2xl shadow-lg hover:scale-110 transition flex items-center gap-3 group" draggable="false">
@@ -316,7 +445,6 @@
 
     <!-- External Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
